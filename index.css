@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Andika', sans-serif;
+}
+
+
+/* color-pallete
+#2A2F4F
+#917FB3
+#FDE2F3
+#E5BEEC */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    height: 10vh;
+    background-color: #2A2F4F;
+    color: #E5BEEC;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    display: flex;
+    border-bottom: 3px solid #E5BEEC;
+}
+
+.header div{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container {
+    min-height: 90vh;
+    height: 100%;
+    width: 100%;
+    background-color: #FDE2F3;
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    position: relative;
+}
+
+.form-page {
+    width: 60%;
+}
+
+form {
+    border: 5px solid #2A2F4F;
+    border-radius: 15px;
+    width: 80%;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+form div {
+    margin: 30px 0;
+}
+
+form label {
+    font-size: 25px;
+    color: #2A2F4F;
+}
+form label i{
+    color: #2A2F4F;
+}
+
+
+#name,
+#email,
+#password,
+#dob {
+    height: 40px;
+    width: 60%;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#name:invalid:focus,
+#email:invalid:focus,
+#password:invalid:focus,
+#dob:invalid:focus {
+    border: 2px solid #2A2F4F;
+}
+
+#chklabel {
+    font-size: 20px;
+}
+
+#acceptTerms {
+    height: 15px;
+    width: 15px;
+}
+
+#submit, #btn {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #917FB3;
+    color: #2A2F4F;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #E5BEEC;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    float: right;
+}
+
+#submit:hover ,#btn:hover {
+    background-color: #E5BEEC;
+    color: #2A2F4F;
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#btn{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+
+.clear {
+    clear: both;
+}
+
+input:focus {
+    outline: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 350px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+table tr th,
+table tr td {
+    border-right: 5px solid #E5BEEC;
+    border-bottom: 5px solid #E5BEEC;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+    border-left: 5px solid #E5BEEC;
+}
+
+table tr th {
+    text-align: center;
+    border-top: solid 5px #E5BEEC;
+}
+
+/* top-left border-radius */
+table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+#user-entries table th {
+    background-color: #2A2F4F;
+    color: #FDE2F3;
+}
+
+#user-entries table th,
+#user-entries table td {
+    width: 175px;
+    padding: 5px 10px;
+}
+
+.copy{
+    position: relative;
+    top: 5%;
+    left: 17%;
+    color: #2A2F4F;
+}
+
+.copy a{
+    text-decoration: none;
+    color: #2A2F4F;
+}
+
+.copy a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="shortcut icon" href="img/registration_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="header">
+        <div>
+            <img src="img/registration_favicon.png" alt="icon">
+            <h1>Registration Form</h1>
+        </div>
+    </section>
+    <section class="container">
+        <button id="btn" onclick="localStorageClear()">Clear</button>
+        <div class="form-page">
+            <form id="user-form">
+                <div><label for="name"> <i class="fa-solid fa-user fa-bounce"> </i> Name</i> </label>
+                    <input type="text" id="name" name="Name" placeholder="Your Name" required></div>
+                <div><label for="email"><i class="fa-solid fa-envelope fa-bounce"></i> Email</label>
+                    <input type="email" id="email" name="email" placeholder="abc@example.com" required></div>
+                <div><label for="password"><i class="fa-solid fa-lock fa-bounce"></i> Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required></div>
+                <div><label for="dob"><i class="fa-solid fa-calendar fa-bounce"></i> Date of Birth</label>
+                    <input type="date" id="dob" name="dob" min="1950-01-01" max="2050-01-01" value="2000-01-01" required><br></div>
+                <div><input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                    <label for="acceptTerms" id="chklabel">Accept Terms & Conditions</label></div>
+                <button type="submit" id="submit">Submit</button>
+                <div class="clear"></div>
+            </form>
+            <p class="copy">&copy; copyright | <a href="https://www.linkedin.com/in/cheegitimahesh/" target="_blank">Cheegiti Mahesh</a> | 2023</p>
+        </div>
+        <div id="user-entries">
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/4d482375c9.js" crossorigin="anonymous"></script>
+</body>
+</html>
